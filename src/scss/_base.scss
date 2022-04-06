@@ -1,0 +1,146 @@
+body {
+  font-family: $raleway-font-stack;
+  font-size: 18px;
+  line-height: 21px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}
+
+h1 {
+  font-family: $montserrat-font-stack;
+  font-weight: 700;
+  font-size: 144px;
+  line-height: 176px;
+  text-transform: uppercase;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 96px;
+    line-height: 117px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 48px;
+    line-height: 59px;
+  }
+}
+
+h2 {
+  font-family: $kaushan-font-stack;
+  font-weight: 400;
+  font-size: 64px;
+  line-height: 93px;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 48px;
+    line-height: 70px;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 36px;
+    line-height: 52px;
+  }
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
+}
+
+h4 {
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 28px;
+  text-transform: uppercase;
+}
+
+h5 {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+h6 {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+}
+
+button {
+  padding: 22px 104px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  border: 4px solid $white;
+  background: none;
+  color: white;
+  cursor: pointer;
+
+  @media screen and (max-width: 1024px) {
+    padding: 13px 97px;
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  @media screen and (max-width: 768px) {
+    padding: 12px 80px;
+  }
+}
+
+button:hover {
+  transition: 0.5s;
+  border: 4px solid $white;
+  background: white;
+  color: #e4be8d;
+}
+
+button:active {
+  border: 4px solid #e4be8d;
+  background: white;
+}
+
+.divider {
+  width: 170px;
+  border: 4px solid #f38281;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 993px;
+  }
+}
+
+#burger,
+[for="burger"] {
+  display: none;
+  color: white;
+}
+
+[for="burger"] {
+  @media screen and (max-width: 768px) {
+    display: block;
+    position: absolute;
+    text-align: center;
+    right: 33px;
+    top: 19px;
+  }
+}
+
+[for="burger"]:before {
+  content: "☰";
+}
+
+#burger:checked + label + nav {
+  display: block;
+}
+
+#burger:checked + [for="burger"]:before {
+  content: "✖";
+}

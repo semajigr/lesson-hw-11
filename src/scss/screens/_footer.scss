@@ -1,0 +1,255 @@
+.content {
+  &__copyright {
+    text-align: center;
+    border-top: 1px solid $gray;
+    text-transform: uppercase;
+    padding-top: 20px;
+    margin: 0;
+  }
+}
+
+.footer {
+  max-width: 1170px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 993px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 288px;
+    margin: 0 auto;
+    flex-direction: column;
+  }
+
+  &__description {
+    margin: 78px 0 42px 0;
+    width: 370px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 52px 0 51px 0;
+      width: 317px;
+    }
+  }
+
+  &__logo {
+    margin-bottom: 26px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 17px;
+    }
+  }
+
+  &__text {
+    padding: 18px 0;
+    font-size: 18px;
+    line-height: 21px;
+    color: $gray;
+
+    @media screen and (max-width: 1024px) {
+      padding: 16px 0;
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__followers {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 30px;
+    padding: 22px 0;
+
+    @media screen and (max-width: 1024px) {
+      padding: 10px 0;
+      font-size: 14px;
+    }
+  }
+
+  &__size {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 30px;
+    font-style: normal;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 30px;
+    }
+  }
+
+  &__divider {
+    margin: 0;
+  }
+
+  &__follow-us {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 37px;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 25px;
+    }
+  }
+
+  &__follow {
+    font-style: italic;
+    font-weight: 400;
+    color: $gray;
+    padding: 14px 30px 14px 0;
+    margin: 0;
+  }
+
+  &__form {
+    width: 100%;
+    display: flex;
+  }
+
+  &__email {
+    width: 60%;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    border-right: none;
+    border: 1px solid $gray;
+    color: $gray;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__subscribe {
+    width: 40%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 17px 16px;
+    border: none;
+    background: $green;
+    text-transform: uppercase;
+    color: white;
+    cursor: pointer;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__blogs {
+    margin: 42px 0;
+    width: 470px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 28px 0 51px 0;
+      width: 402px;
+    }
+  }
+
+  &__blog {
+    margin-bottom: 20px;
+    display: flex;
+    column-gap: 30px;
+    width: 100%;
+
+    @media screen and (max-width: 1024px) {
+      margin-bottom: 13px;
+      column-gap: 20px;
+    }
+  }
+
+  &__image {
+    object-fit: cover;
+    object-position: center;
+
+    @media screen and (max-width: 1024px) {
+      width: 115px;
+      height: 71px;
+    }
+  }
+
+  &__title {
+    font-weight: 700;
+    padding: 36px 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+  }
+
+  &__subtitle {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    padding: 4px 0;
+    text-transform: uppercase;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__date {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 15px;
+    padding: 10px 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__instagram {
+    margin-top: 42px;
+    width: 270px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 28px 0 23px 0;
+      width: 233px;
+    }
+  }
+
+  &__album {
+    display: grid;
+    grid-template-columns: repeat(3, 90px);
+    grid-template-rows: repeat(3, 88px);
+
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(3, 78px);
+      grid-template-rows: repeat(3, 76px);
+    }
+  }
+
+  &__photo {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &__see {
+    padding: 10px 0;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: underline;
+    margin: 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 12px;
+      line-height: 14px;
+    }
+  }
+
+  &__link {
+    color: $gray;
+  }
+}

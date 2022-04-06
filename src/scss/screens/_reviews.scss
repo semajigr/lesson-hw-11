@@ -1,0 +1,103 @@
+.reviews {
+  margin-top: 114px;
+  background-color: $white;
+
+  &__container {
+    max-width: 1170px;
+    margin: 0 auto;
+    padding: 42px 0;
+    column-gap: 45px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media screen and (max-width: 1024px) {
+      max-width: 993px;
+      padding: 28px 0;
+      column-gap: 40px;
+    }
+
+    @media screen and (max-width: 768px) {
+      max-width: 288px;
+    }
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.content {
+  &__icon {
+    float: left;
+    margin-right: 30px;
+    object-fit: cover;
+    object-position: center;
+
+    @media screen and (max-width: 1024px) {
+      margin-right: 37px;
+      width: 115px;
+      height: 115px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+  }
+
+  &__description {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    font-style: italic;
+    color: #a9afb1;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 16px;
+    }
+  }
+
+  &__divider {
+    float: left;
+    width: 70px;
+    margin: 48px 56px 0 0;
+    border: none;
+    height: 4px;
+    background: $red;
+
+    @media screen and (max-width: 1024px) {
+      width: 47px;
+      margin: 32px 38px 0 0;
+    }
+  }
+
+  &__author {
+    margin-top: 28px;
+    font-family: $kaushan-font-stack;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 21px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 18px;
+      line-height: 26px;
+    }
+  }
+}

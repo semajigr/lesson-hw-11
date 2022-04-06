@@ -1,0 +1,129 @@
+.about-us {
+  text-align: center;
+  max-width: 1186px;
+  margin: 0 auto;
+
+  @media screen and (max-width: 1024px) {
+    max-width: 978px;
+  }
+
+  @media screen and (max-width: 768px) {
+    max-width: 288px;
+  }
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(3, 31.3%);
+    grid-template-rows: 100%;
+    justify-content: center;
+    grid-gap: 30px;
+
+    @media screen and (max-width: 1024px) {
+      grid-gap: 20px;
+    }
+
+    @media screen and (max-width: 768px) {
+      grid-template-columns: 100%;
+      grid-template-rows: repeat(3, 33.3%);
+      row-gap: 16px;
+    }
+  }
+
+  &__title {
+    margin-top: 42px;
+    font-size: 30px;
+    line-height: 44px;
+    color: $dark;
+    padding: 18px 0;
+
+    @media screen and (max-width: 1024px) {
+      margin-top: 28px;
+      font-size: 24px;
+      line-height: 35px;
+    }
+  }
+
+  &__subtitle {
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 42px;
+    color: $dark;
+    padding: 20px 0;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 24px;
+      line-height: 28px;
+    }
+  }
+
+  &__description {
+    font-size: 18px;
+    line-height: 21px;
+    padding: 38px 0;
+    margin-bottom: 58px;
+
+    @media screen and (max-width: 1024px) {
+      font-size: 14px;
+      line-height: 16px;
+      margin-bottom: 48px;
+    }
+  }
+}
+
+.case {
+  position: relative;
+
+  @media screen and (max-width: 768px) {
+    margin: 0 auto;
+  }
+
+  &__over {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    transition: opacity 0.3s;
+    background: linear-gradient(
+      360deg,
+      rgba(237, 215, 137, 0.9) 0%,
+      rgba(233, 130, 131, 0.9) 100%
+    );
+    color: white;
+
+    &:hover {
+      opacity: 0.9;
+      transform: translate(-16px, -16px);
+
+      @media screen and (max-width: 1024px) {
+        transform: translate(-6px, -6px);
+      }
+
+      @media screen and (max-width: 768px) {
+        transform: translate(0, 0);
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      margin-top: 180px;
+      height: 83px;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__team {
+    margin: 129px 165px 30px;
+
+    @media screen and (max-width: 1024px) {
+      margin: 108px 140px 25px;
+    }
+
+    @media screen and (max-width: 768px) {
+      margin: 16px 20px;
+    }
+  }
+}

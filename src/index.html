@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./scss/main.scss" />
+  </head>
+  <body>
+    <div class="main-back">
+      <div class="container">
+        <header class="header">
+          <div class="header__container">
+            <div class="header__logo">
+              <picture>
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./images/MoGo-mobile.svg"
+                />
+                <img src="./images/MoGo.svg" alt="Logo" />
+              </picture>
+            </div>
+            <input type="checkbox" id="burger" />
+            <label for="burger"></label>
+            <nav class="header__menu">
+              <ul class="header__menu-list">
+                <li><a href="#" class="header__menu-item">About</a></li>
+                <li><a href="#" class="header__menu-item">service</a></li>
+                <li><a href="#" class="header__menu-item">work</a></li>
+                <li><a href="#" class="header__menu-item">blog</a></li>
+                <li><a href="#" class="header__menu-item">Contact</a></li>
+                <a href="#" class="header__menu-icon"
+                  ><img src="./images/shopping-cart.svg" alt="Cart"
+                /></a>
+                <a href="#" class="header__menu-icon"
+                  ><img src="./images/search.svg" alt="Search"
+                /></a>
+              </ul>
+            </nav>
+          </div>
+        </header>
+
+        <div class="banner">
+          <h2 class="banner__subtitle">Creative Template</h2>
+          <h1 class="banner__title">
+            Welcome <br />
+            to MoGo
+          </h1>
+          <hr class="banner__divider" />
+          <button class="banner__button">learn more</button>
+        </div>
+
+        <div class="sliders">
+          <div class="sliders__active">
+            <p class="sliders__description">
+              <span class="sliders__font">01</span> intro
+            </p>
+          </div>
+          <div class="sliders__passive">
+            <p class="sliders__description">
+              <span class="sliders__font">02</span> worck
+            </p>
+          </div>
+          <div class="sliders__passive">
+            <p class="sliders__description">
+              <span class="sliders__font">03</span> about
+            </p>
+          </div>
+          <div class="sliders__passive">
+            <p class="sliders__description">
+              <span class="sliders__font">04</span> contacts
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="about-us">
+      <div class="about-us__about">
+        <h2 class="about-us__title">What we do</h2>
+        <h3 class="about-us__subtitle">story about us</h3>
+        <hr class="divider" />
+        <p class="about-us__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis
+          sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien
+          ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit
+          fermentum risus feugiat.
+        </p>
+      </div>
+
+      <div class="about-us__container">
+        <div class="about-us__case case">
+          <picture>
+            <source
+              media="(max-width: 768px)"
+              srcset="./images/mobile-build.png"
+            />
+            <img src="./images/back.png" alt="green" class="case__image" />
+          </picture>
+          <div class="case__over">
+            <img src="./images/team-icon.svg" alt="Team" class="case__team" />
+            <h4 class="case__title">Super team</h4>
+          </div>
+        </div>
+
+        <div class="about-us__case case">
+          <img
+            src="./images/second-build.png"
+            alt="Build"
+            class="case__image"
+          />
+          <div class="case__over">
+            <img src="./images/team-icon.svg" alt="Team" class="case__team" />
+            <h4 class="case__title">Super team</h4>
+          </div>
+        </div>
+
+        <div class="about-us__case case">
+          <img src="./images/third-build.png" alt="Build" class="case__image" />
+          <div class="case__over">
+            <img src="./images/team-icon.svg" alt="Team" class="case__team" />
+            <h4 class="case__title">Super team</h4>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="reviews__container">
+        <img src="./images/arrow-left.svg" alt="Arrow" class="reviews__icon" />
+
+        <div class="reviews__content content">
+          <img
+            src="./images/message-icon.svg"
+            alt="Message-icon"
+            class="content__icon"
+          />
+          <p class="content__description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nec
+            diam platea ullamcorper feugiat amet. Id aliquet vehicula feugiat
+            arcu arcu nulla ornare. Sed amet venenatis, massa sit.
+          </p>
+          <hr class="content__divider" />
+          <p class="content__author">Jon Doe</p>
+        </div>
+
+        <img src="./images/arrow-right.svg" alt="Arrow" class="reviews__icon" />
+      </div>
+    </section>
+
+    <section class="portfolio">
+      <div class="portfolio__about">
+        <h2 class="portfolio__title">What we do</h2>
+        <h3 class="portfolio__subtitle">some of our work</h3>
+        <hr class="divider" />
+        <p class="portfolio__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Eu facilisis
+          sed venenatis lacus. Eget sit ridiculus facilisi amet. Dis sapien
+          ipsum enim dui fermentum viverra dolor sit. Aliquet congue sit
+          fermentum risus feugiat.
+        </p>
+      </div>
+
+      <div class="portfolio__container">
+        <div class="portfolio__case case">
+          <img
+            src="./images/portfolio-case.png"
+            alt="Case"
+            class="case__image"
+          />
+
+          <div class="case__overlay">
+            <img src="./images/cup-icon.svg" alt="Cup" class="case__icon" />
+            <h4 class="case__title">creatively design</h4>
+            <p class="case__description">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="portfolio__case case">
+          <img
+            src="./images/portfolio-case1.png"
+            alt="Case"
+            class="case__image"
+          />
+
+          <div class="case__overlay">
+            <img src="./images/cup-icon.svg" alt="Cup" class="case__icon" />
+            <h4 class="case__title">creatively design</h4>
+            <p class="case__description">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="portfolio__case case-height">
+          <img
+            src="./images/portfolio-case2.png"
+            alt="Case"
+            class="case__image"
+          />
+
+          <div class="case__overlay">
+            <img src="./images/cup-icon.svg" alt="Cup" class="case__icon" />
+            <h4 class="case__title">creatively design</h4>
+            <p class="case__description">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="portfolio__case case">
+          <img
+            src="./images/portfolio-case3.png"
+            alt="Case"
+            class="case__image"
+          />
+
+          <div class="case__overlay">
+            <img src="./images/cup-icon.svg" alt="Cup" class="case__icon" />
+            <h4 class="case__title">creatively design</h4>
+            <p class="case__description">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="portfolio__case case">
+          <img
+            src="./images/portfolio-case4.png"
+            alt="Case"
+            class="case__image"
+          />
+
+          <div class="case__overlay">
+            <img src="./images/cup-icon.svg" alt="Cup" class="case__icon" />
+            <h4 class="case__title">creatively design</h4>
+            <p class="case__description">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="portfolio__case case">
+          <img
+            src="./images/portfolio-case5.png"
+            alt="Case"
+            class="case__image"
+          />
+
+          <div class="case__overlay">
+            <img src="./images/cup-icon.svg" alt="Cup" class="case__icon" />
+            <h4 class="case__title">creatively design</h4>
+            <p class="case__description">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+
+        <div class="portfolio__case case-last">
+          <img
+            src="./images/portfolio-case6.png"
+            alt="Case"
+            class="case__image"
+          />
+
+          <div class="case__overlay">
+            <img src="./images/cup-icon.svg" alt="Cup" class="case__icon" />
+            <h4 class="case__title">creatively design</h4>
+            <p class="case__description">Lorem ipsum dolor sit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="map__content">
+        <img src="./images/map-icon.svg" alt="map" class="map__icon" />
+        <p class="map__description">Latest blog</p>
+        <hr class="map__divider" />
+      </div>
+    </section>
+
+    <section class="content">
+      <footer class="footer">
+        <div class="footer__description">
+          <picture>
+            <source
+              srcset="./images/MoGo-footer-1024.svg"
+              media="(max-width: 1024px)" />
+            <img
+              src="./images/MoGo-footer.svg"
+              alt="footer-logo"
+              class="footer__logo"
+          /></picture>
+          <p class="footer__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Pellentesque quis proin varius vitae leo eget tincidunt duis amet.
+            Et amet dis vel imperdiet volutpat mauris est leo cursus.
+          </p>
+          <p class="footer__followers">
+            <span class="footer__size">15</span>k followers
+          </p>
+          <hr class="footer__divider" />
+          <div class="footer__follow-us">
+            <h6 class="footer__follow">Follow Us</h6>
+            <img src="./images/facebook-icon.svg" alt="facebook" />
+            <img src="./images/twitter-icon.svg" alt="twitter" />
+            <img src="./images/instagram-icon.svg" alt="instagram" />
+            <img src="./images/pinterest-icon.svg" alt="pinterest" />
+            <img src="./images/linkedin-icon.svg" alt="linkedin" />
+            <img src="./images/youtube-icon.svg" alt="youtube" />
+            <img src="./images/dribble-icon.svg" alt="dribble" />
+            <img src="./images/tiktok-icon.svg" alt="tiktok" />
+          </div>
+          <div class="footer__form">
+            <input
+              type="email"
+              placeholder="Your Email"
+              class="footer__email"
+            />
+            <input type="button" value="subscribe" class="footer__subscribe" />
+          </div>
+        </div>
+        <div class="footer__blogs">
+          <h4 class="footer__title">blogs</h4>
+          <div class="footer__blog">
+            <img src="./images/first.png" alt="first" class="footer__image" />
+            <div class="footer__first">
+              <p class="footer__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="footer__date">jan.9.22.15</p>
+            </div>
+          </div>
+
+          <div class="footer__blog">
+            <img src="./images/second.png" alt="second" class="footer__image" />
+            <div class="footer__first">
+              <p class="footer__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="footer__date">jan.9.22.15</p>
+            </div>
+          </div>
+
+          <div class="footer__blog">
+            <img src="./images/third.png" alt="third" class="footer__image" />
+            <div class="footer__first">
+              <p class="footer__subtitle">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              </p>
+              <p class="footer__date">jan.9.22.15</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__instagram">
+          <h4 class="footer__title">instagram</h4>
+          <div class="footer__album">
+            <img
+              src="./images/inst-photo.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo1.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo2.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo3.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo4.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo5.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo6.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo7.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+            <img
+              src="./images/inst-photo8.png"
+              alt="inst-photo"
+              class="footer__photo"
+            />
+          </div>
+          <h6 class="footer__see">
+            <a href="#" class="footer__link"> see all photos</a>
+          </h6>
+        </div>
+      </footer>
+      <h6 class="content__copyright">
+        Copyright © 2021 mogo. All Rights Reserved
+      </h6>
+    </section>
+  </body>
+</html>
